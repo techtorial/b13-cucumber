@@ -19,14 +19,14 @@ public class WebOrderHook {
 
     WebDriver driver= DriverHelper.getDriver();
 
-    @Before
-    public void navigation(){
-        driver.get(ConfigReader.readProperty("weborderurl"));
-    }
-
-    @After
-    public void tearDown(Scenario scenario){
-        BrowserUtils.getScreenShotCucumber(scenario,driver);
-        driver.quit();
-    }
+//   @Before
+//    public void navigation(){
+//        driver.get(ConfigReader.readProperty("weborderurl"));
+//    }
+//
+//    @After
+//    public void tearDown(Scenario scenario){
+//        BrowserUtils.getScreenShotCucumber(scenario,driver);
+//        driver.quit();
+//    }
 }

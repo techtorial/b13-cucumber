@@ -26,9 +26,9 @@ public class LoginPage {
     WebElement errorMessage;
 
     public void login(String username,String password){
-     //  this.username.clear();
+      this.username.clear();
         this.username.sendKeys(username);
-    //   this.password.clear();
+       this.password.clear();
         this.password.sendKeys(password);
         signInButton.click();
     }

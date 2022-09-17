@@ -30,4 +30,9 @@ public class LoginStepDef {
 //    public void user_navigates_to_the(String website) {
 //        driver.get(website);
 //    }
+
+    @Then("User exits the website")
+    public void user_exits_the_website() {
+
+    }
 }

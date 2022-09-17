@@ -1,5 +1,9 @@
 package com.test.weborder.runners;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
 /*THESE ARE INTERVIEW QUESTIONS:
 ->Runner class is a way to run your all feature files from here.(xml in TESTNG)
 Regression,smoke,integration...etc
@@ -13,5 +17,13 @@ you can run some scenarios for only regression or smoke or etc.
 -->plugin-->is a way to integrate specific condition for the keyword. It is mostly
 used to create a report card.
  */
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features/weborder",
+        glue = "com/test/weborder/stepdefinitions",
+        dryRun = false,
+        tags = "@regression",
+        plugin = {"pretty","html:target/uiReport.html","rerun:target/uiFailedTests.txt"}
+)
 public class WebOrderRunner {
 }
