@@ -16,9 +16,9 @@ import java.io.IOException;
 import java.util.Date;
 
 public class WebOrderHook {
-
-    WebDriver driver= DriverHelper.getDriver();
-
+//
+//    WebDriver driver= DriverHelper.getDriver();
+//
 //   @Before
 //    public void navigation(){
 //        driver.get(ConfigReader.readProperty("weborderurl"));
